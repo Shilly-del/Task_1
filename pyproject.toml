@@ -4,6 +4,18 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = [
-    "ruff>=0.15.4",
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "ruff>=0.15.2",
 ]
+[tool.ruff]
+exclude = [
+    ".git", ".venv", "__pycache__", "qa_python_project"
+]
+[tool.ruff.lint]
+
+extend-select = ["W505"]
+[tool.ruff.lint.pycodestyle]
+max-doc-length = 79
