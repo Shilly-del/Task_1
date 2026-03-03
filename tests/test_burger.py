@@ -42,7 +42,7 @@ class TestBurger:
 
         assert element_index == new_index
 
-    def test_get_price_bun(self, burger):
+    def test_get_price(self, burger):
         '''
         Мокаем вызовы цены булочки и цен ингридиентов, устанавливаем их как атрибуты,
         запускаем метод, проверяем, что цена посчиталась правильно.
